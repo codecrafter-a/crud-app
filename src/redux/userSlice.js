@@ -1,19 +1,33 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { v4 as uuidv4 } from "uuid";
 const initialState = {
-    userList: [{
-        id: uuidv4(),
-        firstName: "PM",
-        lastName: "mish",
-        email: "92@gmail.com",
-        phone: "918273774",
-        dob: "",
-        address: "",
-        education: [],
-        expericence: []
-    }
-
-    ],
+    userList: [
+        {
+            id: uuidv4(), 
+            firstName: "PM",
+            lastName: "Mishra",
+            email: "92@gmail.com",
+            phone: "918273774",
+            dob: "",
+            address: "",
+            education: [
+                {
+                    degree: "Bachelors",
+                    college: "XYZ University",
+                    startYear: "2015",
+                    endYear: "2019"
+                },
+            ],
+            experience: [
+                {
+                    companyName: "ABC Corp",
+                    startMonthYear: "2020-01",
+                    endMonthYear: "2022-12",
+                    role: "Software Engineer"
+                },
+            ]
+        },
+    ]
 
 }
 
@@ -40,34 +54,3 @@ const userSlice = createSlice({
 export const { addUser, updateUser, deleteUser } = userSlice.actions
 
 export default userSlice.reducer;
-
-
-
-
-// export const booksSlice = createSlice({
-//   name: "books",
-//   initialState: initialBooks,
-//   reducers: {
-//     showBooks: (state) => state,
-//     addBook: (state, action) => {
-//       state.books.push(action.payload);
-//     },
-//     updateBook: (state, action) => {
-//       const { id, title, author } = action.payload;
-//       const isBookExist = state.books.filter((book) => book.id === id);
-
-//       if (isBookExist) {
-//         isBookExist[0].title = title;
-//         isBookExist[0].author = author;
-//       }
-//     },
-//     deleteBook: (state, action) => {
-//       const id = action.payload;
-//       state.books = state.books.filter((book) => book.id !== id);
-//     },
-//   },
-// });
-
-// export const { showBooks, addBook, updateBook, deleteBook } =
-//   booksSlice.actions;
-// export default booksSlice.reducer;

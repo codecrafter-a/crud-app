@@ -27,7 +27,6 @@
 table {
   border: 2px solid forestgreen;
   width: 800px;
-  height: 200px;
 }
 
 th {
@@ -65,7 +64,15 @@ form h4 {
   margin-top: 20px;
   font-size: 18px;
 }
+.dropdown-data{
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 
+}
 input,
 button {
   display: block;
@@ -96,7 +103,6 @@ th{
 td{
   padding: 10px;
   border: 1px solid #ddd;
-  vertical-align: top;
 }
 .edit-btn{
   padding: 6px 10px;
@@ -111,4 +117,9 @@ td{
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.heading-data{
+  display: flex;
+  justify-content: space-between;
 }

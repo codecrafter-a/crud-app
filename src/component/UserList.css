@@ -1,0 +1,133 @@
+.user-list-container {
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+.user-list-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.add-user-btn {
+  background-color: #7e867e;
+  color: white;
+  font-size: 16px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.add-user-btn:hover {
+  background-color: #45a049;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background-color: white;
+  padding: 20px;
+  width: 48%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #aaa;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.dropdown-data{
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+
+}
+.close-btn:hover {
+  color: #f44336;
+}
+
+.user-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.user-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.user-table tr:hover {
+  background-color: #ddd;
+}
+
+.user-table thead {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.user-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
+
+.user-table tr:hover {
+  background-color: #f1f1f1;
+}
+.edit-btn,
+.delete-btn {
+  padding: 8px 15px;
+  border: none;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+  margin-right: 5px;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.no-users-text {
+  text-align: center;
+  font-size: 16px;
+  color: #888;
+}
+.table-container {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
